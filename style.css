@@ -5,6 +5,23 @@
   src: url(https://fonts.gstatic.com/s/yellowtail/v11/OZpGg_pnoDtINPfRIlLohlvHwWL9f4k.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensanscondensed/v15/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMR7eS2Ao.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensanscondensed/v15/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMR7eS2Ao.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 
 * {
   margin: 0;
@@ -42,17 +59,25 @@ h1 {
   font-size: 50px;
 }
 h2 {
+  font-family:'Open Sans Condensed';
   font-size: 12px;
+  font-weight: 300;
+  
 }
 
 h3 {
-  font-size: 55px;
+  font-family:'Open Sans Condensed';
+  font-weight: 900;
+  font-size: 50px;
 }
 h4 {
+  font-family:'Open Sans Condensed';
   opacity: 0.5;
+  font-weight: 300;
+
 }
 
-#line {
+.line {
   height: 10px;
   background-color: rgba(168, 168, 168, 0.89);
 }
@@ -67,7 +92,8 @@ form{
   display: flex;
   flex-direction: row;
   background-image: url('img/list-bg.png');
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 #left-col{
   /* display: block;
@@ -79,6 +105,7 @@ form{
 #right-col {
   display: flex;
   flex-direction: column;
+  
 }
 
 label {
@@ -86,4 +113,38 @@ label {
   padding: 10px;
   font-family: fantasy;
   color: black;
+}
+section{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+#bio{
+display: inline-block;
+  width: 700px;
+}
+
+button{
+  float: right;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(216, 98, 52);
+  margin-top: 20px;
+}
+hr{
+  margin-top: 20px;
+}
+footer img{
+  position: relative; 
+  left: 430px;
+  bottom: 17px;
+}
+.dashed{
+  text-decoration: line-through;
+}
+#print{
+  float: right;
+}
+footer p {
+  text-align: center;
 }
